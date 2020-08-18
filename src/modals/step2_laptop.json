@@ -1,0 +1,83 @@
+{
+  "type": "modal",
+  "callback_id": "helpdesk-request-modal",
+  "private_metadata": "{\"category\":\"laptop\"}",
+  "title": {
+    "type": "plain_text",
+    "text": "Helpdesk Request"
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "Submit"
+  },
+  "close": {
+    "type": "plain_text",
+    "text": "Close"
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "You're making a request on your laptop."
+      },
+      "accessory": {
+        "type": "button",
+        "action_id": "helpdesk-request-modal-reset",
+        "text": {
+          "type": "plain_text",
+          "text": "Back"
+        },
+        "value": "1"
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "title",
+      "label": {
+        "type": "plain_text",
+        "text": "Title"
+      },
+      "element": {
+        "type": "plain_text_input",
+        "action_id": "element",
+        "initial_value": "Laptop Replacement"
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "laptop-model",
+      "label": {
+        "type": "plain_text",
+        "text": "Laptop Model"
+      },
+      "element": {
+        "type": "static_select",
+        "action_id": "element",
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "MacBook Pro (16-inch, 2019)"
+            },
+            "value": "MacBookPro16,1"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "MacBook Pro (13-inch, 2019, Two Thunderbolt 3 ports)"
+            },
+            "value": "MacBookPro15,4"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Surface Book 3 for Business"
+            },
+            "value": "SurfaceBook3"
+          }
+        ]
+      }
+    }
+  ]
+}

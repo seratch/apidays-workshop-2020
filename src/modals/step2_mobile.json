@@ -1,0 +1,109 @@
+{
+  "type": "modal",
+  "callback_id": "helpdesk-request-modal",
+  "private_metadata": "{\"category\":\"mobile\"}",
+  "title": {
+    "type": "plain_text",
+    "text": "Helpdesk Request"
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "Submit"
+  },
+  "close": {
+    "type": "plain_text",
+    "text": "Close"
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "You're making a request on your mobile devices."
+      },
+      "accessory": {
+        "type": "button",
+        "action_id": "helpdesk-request-modal-reset",
+        "text": {
+          "type": "plain_text",
+          "text": "Back"
+        },
+        "value": "1"
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "title",
+      "label": {
+        "type": "plain_text",
+        "text": "Title"
+      },
+      "element": {
+        "type": "plain_text_input",
+        "action_id": "element",
+        "initial_value": "Mobile Device Replacement"
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "os",
+      "label": {
+        "type": "plain_text",
+        "text": "Mobile OS"
+      },
+      "element": {
+        "type": "static_select",
+        "action_id": "element",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select an item"
+        },
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "iOS"
+            },
+            "value": "ios"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Android"
+            },
+            "value": "android"
+          }
+        ]
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "approver",
+      "label": {
+        "type": "plain_text",
+        "text": "Approver"
+      },
+      "element": {
+        "type": "users_select",
+        "action_id": "element",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select your approver"
+        }
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "due-date",
+      "element": {
+        "type": "datepicker",
+        "action_id": "element"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "Due date",
+        "emoji": true
+      }
+    }
+  ]
+}

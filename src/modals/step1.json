@@ -1,0 +1,53 @@
+{
+  "type": "modal",
+  "callback_id": "helpdesk-request-modal",
+  "title": {
+    "type": "plain_text",
+    "text": "Helpdesk Request"
+  },
+  "close": {
+    "type": "plain_text",
+    "text": "Close"
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": ":wave: Select a category."
+      }
+    },
+    {
+      "type": "actions",
+      "elements": [
+        {
+          "type": "static_select",
+          "action_id": "helpdesk-request-modal-category-selection",
+          "options": [
+            {
+              "text": {
+                "type": "plain_text",
+                "text": "Laptop"
+              },
+              "value": "laptop"
+            },
+            {
+              "text": {
+                "type": "plain_text",
+                "text": "Mobile"
+              },
+              "value": "mobile"
+            },
+            {
+              "text": {
+                "type": "plain_text",
+                "text": "Other"
+              },
+              "value": "other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

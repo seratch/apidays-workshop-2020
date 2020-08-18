@@ -1,0 +1,61 @@
+{
+  "type": "modal",
+  "callback_id": "helpdesk-request-modal",
+  "private_metadata": "{\"category\":\"other\"}",
+  "title": {
+    "type": "plain_text",
+    "text": "Helpdesk Request"
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "Submit"
+  },
+  "close": {
+    "type": "plain_text",
+    "text": "Close"
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "You're making a request on your This may be a bit rare one. Please share the details with us as much as possible."
+      },
+      "accessory": {
+        "type": "button",
+        "action_id": "helpdesk-request-modal-reset",
+        "text": {
+          "type": "plain_text",
+          "text": "Back"
+        },
+        "value": "1"
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "title",
+      "label": {
+        "type": "plain_text",
+        "text": "Title"
+      },
+      "element": {
+        "type": "plain_text_input",
+        "action_id": "element",
+        "initial_value": ""
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "description",
+      "label": {
+        "type": "plain_text",
+        "text": "Description"
+      },
+      "element": {
+        "type": "plain_text_input",
+        "action_id": "element",
+        "multiline": true
+      }
+    }
+  ]
+}

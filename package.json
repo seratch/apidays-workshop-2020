@@ -1,0 +1,38 @@
+{
+  "name": "apidays-workshop-2020",
+  "version": "0.0.1",
+  "description": "Awesome Slack app!",
+  "main": "index.js",
+  "scripts": {
+    "local": "node_modules/.bin/nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src/modals/*",
+      "src/initial.js",
+      "src/solution.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:seratch/apidays-workshop-2020.git"
+  },
+  "keywords": [
+    "Slack",
+    "Bolt"
+  ],
+  "author": "@seratch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seratch/apidays-workshop-2020/issues"
+  },
+  "homepage": "https://github.com/seratch/apidays-workshop-2020#readme",
+  "dependencies": {
+    "@slack/bolt": "^2.2.3",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
