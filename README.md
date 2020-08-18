@@ -2,7 +2,7 @@
 
 This repository is the workshop material for [Apidays live Singapore](https://www.apidays.co/singapore/). If you're not an attendee of the workshop, don't worry! You can try this sample project just by reading this.
 
-## Go to **git.io/Apidays-Slack**
+## Go to **git.io/apidays-slack**
 
 This project template is available at **git.io/apidays-slack** (https://github.com/seratch/apidays-workshop-2020). Use the shortened URL for sharing this material with others!
 
