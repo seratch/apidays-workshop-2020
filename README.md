@@ -1,26 +1,47 @@
 # Welcome to Slack App Development!
 
-This repository is the workshop material for [Apidays live Singapore](https://www.apidays.co/singapore/). If you're not an attendee of the workshop, don't worry! You can try this sample project just by reading this.
+This repository is the workshop material for [Apidays live Singapore](https://www.apidays.co/singapore/) and [Apidays live Australia](https://www.apidays.co/australia/). If you're not an attendee of the workshop, don't worry! You can try this sample project just by reading this.
 
 ## Go to **git.io/apidays-slack**
 
 This project template is available at **git.io/apidays-slack** (https://github.com/seratch/apidays-workshop-2020). Use the shortened URL for sharing this material with others!
 
-## The App We're Going to Build
+## The App We're Going to Build - Helpdesk App
 
 In this workshop, we're going to build a **helpdesk workflow app** from scratch. Building the app helps us learn how to start Slack App development and utilize the latest Slack Platform features.
 
 Here is the quick demo of the complete version of the helpdesk workflow:
 
-<img src="https://user-images.githubusercontent.com/19658/90306649-611a4500-df0a-11ea-9f02-b05cc9e5ff52.gif" height=500>
+### Run a Global Shortcut
 
 When an end-user clicks a **shortcut** from the text composer (or the search bar), a **modal window** pops up.
 
+<img src="https://user-images.githubusercontent.com/19658/93039835-80c89880-f683-11ea-8cc7-3a7289c61101.gif" width=600>
+
+### Multiple Steps in a Modal
+
 When the user selects a category from the select menu, **the modal immediately transforms itself** to show input fields for the chosen category. Also, **"Back" button** in the modal allows the user to go back to the initial step.
+
+<img src="https://user-images.githubusercontent.com/19658/93039831-79a18a80-f683-11ea-8474-51a85c2cdc6f.gif" width=600>
+
+### Custom Validations in a Modal
+
 
 The app applies **custom input validation rules** for the title and due-date inputs.
 
-When the app receives a valid data submission from the user, the app **sends notifications** to the helpdesk team's channel, the DM with the submitter, and the DM with the approver (only for mobile device requests). In addition, the app updates **Home tab** for the submitter with the up-to-date list of the person's submissions.
+<img src="https://user-images.githubusercontent.com/19658/93039823-727a7c80-f683-11ea-93f3-9ae306b316fa.gif" width=600>
+
+### Send Notifications
+
+When the app receives a valid data submission from the user, the app **sends notifications** to the helpdesk team's channel, the DM with the submitter, and the DM with the approver (only for mobile device requests). 
+
+<img src="https://user-images.githubusercontent.com/19658/93039844-8625e300-f683-11ea-9331-a6ce591298dd.gif" width=600>
+
+### Refresh Home Tabs
+
+In addition, the app updates **Home tab** for the submitter with the up-to-date list of the person's submissions.
+
+<img src="https://user-images.githubusercontent.com/19658/93040135-38f64100-f684-11ea-85b9-dc78a16e7a3f.gif" width=600>
 
 ## The Slack Platform Features
 
