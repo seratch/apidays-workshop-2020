@@ -1,0 +1,1 @@
+slack_bolt>=0.5.2a0

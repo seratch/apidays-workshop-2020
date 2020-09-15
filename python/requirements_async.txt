@@ -1,0 +1,4 @@
+slack_bolt>=0.5.2a0
+aiohttp>=3,<4
+sanic>=20
+uvicorn<1
