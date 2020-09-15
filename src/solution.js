@@ -118,7 +118,7 @@ app.action("helpdesk-request-modal-category-selection", async ({ ack, action, bo
     hash: body.view.hash,
     view: step2ModalView,
   });
-  logger.info("views.open response:\n\n" + toPrettfiedJSONString(res) + "\n");
+  logger.info("views.update response:\n\n" + toPrettfiedJSONString(res) + "\n");
 
 });
 
@@ -144,7 +144,7 @@ app.action("helpdesk-request-modal-reset", async ({ ack, body, logger, client })
     hash: body.view.hash,
     view: step1ModalView,
   });
-  logger.info("views.open response:\n\n" + toPrettfiedJSONString(res) + "\n");
+  logger.info("views.update response:\n\n" + toPrettfiedJSONString(res) + "\n");
 });
 
 // -------------------------------
